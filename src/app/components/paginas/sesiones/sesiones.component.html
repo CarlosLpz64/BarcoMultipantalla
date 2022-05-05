@@ -1,0 +1,38 @@
+<div class="centrar">
+
+    <div class="crearPartida">
+        <h1 style="color: white;">CREAR PARTIDA</h1>
+
+        <form [formGroup]="miForm">
+            <input  formControlName="cant_jugadores" type="text" placeholder="Cantidad de jugadores" />
+            <br>
+            <input formControlName="pantalla" type="text" placeholder="Pantalla del host" />
+            <br><br>
+            <button style="margin-left: 40px;" (click)="crearPartida()">Crear partida</button>
+        </form>
+
+        <br><br><br>
+    </div>
+
+    <h1>UNIRSE A PARTIDA</h1>
+
+    <!--
+    <a routerLink="/juego"> Jugar</a>
+    -->
+
+    <div class="contenedor" *ngFor="let sesion of ListaSesiones2">
+        <div *ngIf="sesion.estado == 'En espera'">
+            <div class="titulo">
+                PARTIDA #{{sesion.id}}
+            </div>
+
+            <div class="pantallas" >
+                <div class="pantalla" *ngFor="let pantalla of sesion.pantallas" (click)="seleccionarSesion(sesion.id, pantalla)">
+                    <div class="contenedorP">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5367/5367619.png">
+                        <div class="numP">{{pantalla}}</div></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="centrar">
+
+    <h1> SIGNUP </h1>
+
+    <form [formGroup]="miForm">
+        <input  formControlName="username" type="email" placeholder="Usuario" />
+        <br>
+        <input  formControlName="email" type="email" placeholder="Correo" />
+        <br>
+        <input formControlName="password" type="password" placeholder="Contraseña" />
+    </form>
+    <br>
+    <button (click)="signup()">Signup</button>
+    <br>
+    <button routerLink="/login">Regresar</button>
+
+</div>

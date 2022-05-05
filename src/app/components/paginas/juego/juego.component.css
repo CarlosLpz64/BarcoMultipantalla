@@ -1,0 +1,15 @@
+.barco{
+    width: 20vw;
+    height: 60vh;
+    margin-top: 45vh;
+    position: fixed;
+}
+
+.fondo{
+    background: rgb(124,163,176);
+    background: linear-gradient(0deg, rgba(124,163,176,1) 0%, rgba(0,233,242,1) 100%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -9999;
+}

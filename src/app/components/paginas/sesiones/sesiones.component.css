@@ -1,0 +1,52 @@
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor{
+    background-color: whitesmoke;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.pantallas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    width: 100vw;
+}
+
+.pantalla{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.contenedorP{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    width: 60%;
+    height: 60%;
+}
+
+.numP{
+    font-size: 80px;
+}
+
+.crearPartida{
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
